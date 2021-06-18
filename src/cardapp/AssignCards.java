@@ -32,4 +32,7 @@ public class AssignCards {
 		}
 		return threeCards;
 	}
+        public static List<CardTemplete> getCards() {
+		return cards;
+	}
 }
