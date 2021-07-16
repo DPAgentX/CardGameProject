@@ -5,7 +5,6 @@
  */
 package cardapp;
 
-
 public class GenerateCard {
 
 	private static int counter = 0;
@@ -26,7 +25,5 @@ public class GenerateCard {
 	public static CardTemplete[] getCards() {
 		return cards;
 	}
-
-
 }
 

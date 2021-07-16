@@ -37,9 +37,14 @@ public class Player {
 	}
 	public void printCards() {
 		for(int i=0; i<cards.length;i++) {
-			System.out.println(cards[i].getSuit() + "     "+cards[i].getValue());
+			System.out.println("Card "+(i+1)+": "+cards[i].getValue()+ "     "+cards[i].getSuit());
 		}
-	}
-	
+        }
+        public void changeCard(CardTemplete card, int index){
+            cards[index] = card;
+        }
+        public String toString(){
+            
+            return "Congratulatins "+ playerName+ " won the game with";
+        }
 }
-

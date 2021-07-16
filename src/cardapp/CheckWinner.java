@@ -5,9 +5,31 @@
  */
 package cardapp;
 
-public class CheckWinner {
-
-	public static void checkWinner(CardTemplete[] player1, CardTemplete[] player2) {
-		
+public class CheckWinner extends Deck{
+        private static boolean winner = true;
+        private Player whoWon = new Player();
+        private CardTemplete[] player1Cards = new CardTemplete[3];
+        private CardTemplete[] player2Cards = new CardTemplete[3];
+        
+        
+	public boolean checkWinner(Player player1, Player player2) {
+            
+            player1Cards = player1.getCards();
+            player2Cards = player2.getCards();
+            if((player1Cards[0].getSuit() == player1Cards[1].getSuit()) && (player1Cards[1].getSuit()==player1Cards[2].getSuit())){
+                setWinner(player1);
+                return winner = false;
+            }
+            else if((player2Cards[0].getSuit() == player2Cards[1].getSuit()) && (player2Cards[1].getSuit()==player2Cards[2].getSuit())){
+                setWinner(player2);
+                return winner = false; 
+            }
+            return super.checkDeck();
 	}
+        public Player getWinner(){
+            return whoWon;
+        }
+        public void setWinner(Player player){
+            this.whoWon = player;
+        }
 }
