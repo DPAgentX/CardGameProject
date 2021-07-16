@@ -8,7 +8,7 @@ package cardapp;
 public class ExchangeCards {
 	
 	public void exchangeCard(CardTemplete[] card) {
-		
+		//DEEP pstel is here 
 	}
 }
 
