@@ -9,15 +9,12 @@ package cardapp;
 public class Player {
 	
 	private String playerName;
-	public static int position = 0;
 	private Card[] cards = new Card[3];
 	
 	public Player() {
-		position++;
 	}
 	public Player(String playerName) {
 		this.playerName = playerName;
-		position++;
 	}
 	
 	public String getPlayerName() {
