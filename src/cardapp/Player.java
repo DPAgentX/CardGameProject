@@ -11,8 +11,7 @@ public class Player {
 	private String playerName;
 	private Card[] cards = new Card[3];
 	
-	public Player() {
-	}
+        public Player(){}
 	public Player(String playerName) {
 		this.playerName = playerName;
 	}
