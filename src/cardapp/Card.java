@@ -1,6 +1,6 @@
 package cardapp;
 
-public class CardTemplete {
+public class Card {
 
 	public enum Values{
 		ACE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,TEN,JACK,QUEEN,KING;
@@ -12,11 +12,11 @@ public class CardTemplete {
 	private final Values value;
 	private final Suits suit;
 	
-	public CardTemplete(CardTemplete.Suits s, CardTemplete.Values v) {
+	public Card(Card.Suits s, Card.Values v) {
 		this.value = v;
 		this.suit = s;
 	}
-	public CardTemplete() {
+	public Card() {
 		this.value=null;
 		this.suit=null;
 	}

@@ -8,21 +8,21 @@ package cardapp;
 public class GenerateCard {
 
 	private static int counter = 0;
-	private static CardTemplete[] cards = new CardTemplete[CardTemplete.Suits.values().length*CardTemplete.Values.values().length];
+	private static Card[] cards = new Card[Card.Suits.values().length*Card.Values.values().length];
 	
 	public static void generateCards() {
 		
-		for(CardTemplete.Suits s: CardTemplete.Suits.values()) {
+		for(Card.Suits s: Card.Suits.values()) {
 			
-			for(CardTemplete.Values v : CardTemplete.Values.values()) {
+			for(Card.Values v : Card.Values.values()) {
 				
-				cards[counter] = new CardTemplete(s,v);
+				cards[counter] = new Card(s,v);
 				counter++;
 			}
 		}
 	}
 	
-	public static CardTemplete[] getCards() {
+	public static Card[] getCards() {
 		return cards;
 	}
 }

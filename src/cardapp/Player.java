@@ -10,7 +10,7 @@ public class Player {
 	
 	private String playerName;
 	public static int position = 0;
-	private CardTemplete[] cards = new CardTemplete[3];
+	private Card[] cards = new Card[3];
 	
 	public Player() {
 		position++;
@@ -24,7 +24,7 @@ public class Player {
 		return this.playerName;
 	}
 	
-	public CardTemplete[] getCards() {
+	public Card[] getCards() {
 		return cards;
 	}
 	
@@ -32,7 +32,7 @@ public class Player {
 		this.playerName = playerName;
 	}
 
-	public void setCards(CardTemplete[] cards){
+	public void setCards(Card[] cards){
 		this.cards = cards;
 	}
 	public void printCards() {
@@ -40,7 +40,7 @@ public class Player {
 			System.out.println("Card "+(i+1)+": "+cards[i].getValue()+ "     "+cards[i].getSuit());
 		}
         }
-        public void changeCard(CardTemplete card, int index){
+        public void changeCard(Card card, int index){
             cards[index] = card;
         }
         public String toString(){

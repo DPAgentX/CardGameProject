@@ -8,8 +8,8 @@ package cardapp;
 public class CheckWinner extends Deck{
         private static boolean winner = true;
         private Player whoWon = new Player();
-        private CardTemplete[] player1Cards = new CardTemplete[3];
-        private CardTemplete[] player2Cards = new CardTemplete[3];
+        private Card[] player1Cards = new Card[3];
+        private Card[] player2Cards = new Card[3];
         
         
 	public boolean checkWinner(Player player1, Player player2) {

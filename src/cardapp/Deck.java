@@ -11,17 +11,17 @@ import java.util.List;
 
 public class Deck {
 
-    private List<CardTemplete> cards = Arrays.asList(GenerateCard.getCards());
+    private List<Card> cards = Arrays.asList(GenerateCard.getCards());
     private int emptyDeck = 0;
     public void print() {
-        for(CardTemplete c: cards) {
+        for(Card c: cards) {
             System.out.println(c);
         }
     }
-    public List<CardTemplete> getCards(){
+    public List<Card> getCards(){
         return cards;
     }
-    public void setCards(List<CardTemplete> cards){
+    public void setCards(List<Card> cards){
     
         this.cards = cards;
     }

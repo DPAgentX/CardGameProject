@@ -17,27 +17,27 @@ public class AssignCards extends Deck{
 	
 	//private List<CardTemplete> cards = super.getCards();
         
-	public CardTemplete[] generateCard() {
+	public Card[] generateCard() {
 		
                 
-		CardTemplete[] threeCards = new CardTemplete[3];
+		Card[] threeCards = new Card[3];
 		int randomNumber;
 		for(int i=0;i<threeCards.length;i++) {
 
-			randomNumber = (int)(Math.random()*(CardTemplete.Values.values().length * CardTemplete.Suits.values().length));
+			randomNumber = (int)(Math.random()*(Card.Values.values().length * Card.Suits.values().length));
 			threeCards[i] = super.getCards().get(randomNumber);
 			while(threeCards[i].getValue()==null || threeCards[i].getSuit()==null) {
-				randomNumber = (int)(Math.random()*(CardTemplete.Values.values().length * CardTemplete.Suits.values().length));
+				randomNumber = (int)(Math.random()*(Card.Values.values().length * Card.Suits.values().length));
 				threeCards[i] = super.getCards().get(randomNumber);
 			}
-			super.getCards().set(randomNumber, new CardTemplete());
+			super.getCards().set(randomNumber, new Card());
                         super.setCards(super.getCards());
 		}
 		return threeCards;
 	}
 
         @Override
-	public  List<CardTemplete> getCards() {
+	public  List<Card> getCards() {
 		return super.getCards();
 	}
 }

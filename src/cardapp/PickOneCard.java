@@ -9,22 +9,22 @@ import java.util.Scanner;
 
 
 
-public class PickACard extends Deck{
+public class PickOneCard extends Deck{
 
     //private List<CardTemplete> cards = super.getCards();
-    private CardTemplete card= new CardTemplete(); 
+    private Card card= new Card(); 
     private int randomNumber;
     private Scanner input = new Scanner(System.in);
     private String choice;
     
     public void giveCard(Player player) {
-	randomNumber = (int)(Math.random()*(CardTemplete.Values.values().length * CardTemplete.Suits.values().length));
+	randomNumber = (int)(Math.random()*(Card.Values.values().length * Card.Suits.values().length));
         card = super.getCards().get(randomNumber);
         while(card.getValue()==null || card.getSuit()==null){
-            randomNumber = (int)(Math.random()*(CardTemplete.Values.values().length * CardTemplete.Suits.values().length));
+            randomNumber = (int)(Math.random()*(Card.Values.values().length * Card.Suits.values().length));
             card = super.getCards().get(randomNumber);
         }
-        super.getCards().set(randomNumber, new CardTemplete());
+        super.getCards().set(randomNumber, new Card());
         System.out.println("For  "+player.getPlayerName());
         player.printCards();
         System.out.println("You got "+card.getValue()+"     "+card.getSuit());
@@ -60,7 +60,7 @@ public class PickACard extends Deck{
         
     }
 	
-	public CardTemplete getCard() {
+	public Card getCard() {
 		return card;
 	}
 	

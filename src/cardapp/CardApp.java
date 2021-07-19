@@ -15,12 +15,13 @@ public class CardApp {
 
 
 
+
 		AssignCards randomCardGenerator = new AssignCards();
 		for(int l=0;l<players.size();l++) {
 			players.get(l).setCards(randomCardGenerator.generateCard());
 		}
                 CheckWinner checkWinner = new CheckWinner();
-                PickACard oneCard = new PickACard();
+                PickOneCard oneCard = new PickOneCard();
                 int i =0;
                 while(checkWinner.checkWinner(players.get(0), players.get(1))){
                 
