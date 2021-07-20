@@ -7,8 +7,6 @@ package cardapp;
 
 import java.util.Scanner;
 
-
-
 public class PickOneCard extends Deck{
 
     //private List<CardTemplete> cards = super.getCards();
@@ -17,7 +15,7 @@ public class PickOneCard extends Deck{
     private Scanner input = new Scanner(System.in);
     private String choice;
     
-    public void giveCard(Player player) {
+    public void getCard(Player player) {
 	randomNumber = (int)(Math.random()*(Card.Values.values().length * Card.Suits.values().length));
         card = super.getCards().get(randomNumber);
         while(card.getValue()==null || card.getSuit()==null){
