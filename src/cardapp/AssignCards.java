@@ -2,7 +2,9 @@
 package cardapp;
 
 
+import java.util.ArrayList;
 import java.util.List;
+
 
 
 public class AssignCards extends Deck{
@@ -20,10 +22,11 @@ public class AssignCards extends Deck{
 	public Card[] generateCard() {
 		
                 
-		Card[] threeCards = new Card[3];
+		Card[] threeCards = new Card[5];
+                
 		int randomNumber;
 		for(int i=0;i<threeCards.length;i++) {
-
+                        
 			randomNumber = (int)(Math.random()*(Card.Values.values().length * Card.Suits.values().length));
 			threeCards[i] = super.getCards().get(randomNumber);
 			while(threeCards[i].getValue()==null || threeCards[i].getSuit()==null) {

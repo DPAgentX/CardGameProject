@@ -16,6 +16,8 @@ public class CardApp {
                 System.out.print("Enter Second Player name:  ");
 		players.add(new Player(input.next()));
 
+
+                
                 
 		AssignCards randomCardGenerator = new AssignCards();
 		for(int l=0;l<players.size();l++) {

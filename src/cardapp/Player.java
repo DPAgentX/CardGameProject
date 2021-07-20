@@ -9,7 +9,7 @@ package cardapp;
 public class Player {
 	
 	private String playerName;
-	private Card[] cards = new Card[3];
+	private Card[] cards = new Card[5];
 	
         public Player(){}
 	public Player(String playerName) {

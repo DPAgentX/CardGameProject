@@ -27,7 +27,7 @@ public class Deck {
     }
     public boolean checkDeck(){
         emptyDeck = 0;
-        for(int i=0;i<52;i++){
+        for(int i=0;i<cards.size();i++){
             if(cards.get(i).getSuit()==null){
                 emptyDeck++;
             }
