@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 
 
-public class Player {
+public class Player{
 	
 	private String playerName;
 	//private Card[] cards = new Card[5];
@@ -19,9 +19,7 @@ public class Player {
 		this.playerName = playerName;
 	}
 	
-	public String getPlayerName() {
-		return this.playerName;
-	}
+
 	
 	public ArrayList<Card> getCards() {
 		return cards;
@@ -30,7 +28,9 @@ public class Player {
 	public void setPlayerName(String playerName) {
 		this.playerName = playerName;
 	}
-        
+        public String getPlayerName() {
+            return this.playerName;
+        }
 	public void setCards(ArrayList<Card> cards){
 		this.cards = cards;
 	}
@@ -48,4 +48,8 @@ public class Player {
             
             return "Congratulatins "+ playerName+ " won the game with";
         }
+
+
+
+
 }

@@ -7,7 +7,8 @@ package cardapp;
 
 import java.util.ArrayList;
 
-public class CheckWinner extends Deck{
+
+public class CheckWinner extends Deck {
         private static boolean winner = true;
         private Player whoWon = new Player();
         //private Card[] player1Cards = new Card[5];
