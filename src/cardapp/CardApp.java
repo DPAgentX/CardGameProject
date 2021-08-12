@@ -13,17 +13,9 @@ public class CardApp {
                 
 		List<Player> players = new ArrayList<>();
                 System.out.print("Enter First Player name:  ");
-		players.add(new Player(input.next()));
+		players.add(Factory.createPlayer(input.next()));
                 System.out.print("Enter Second Player name:  ");
-		players.add(new Player(input.next()));
-                players.add(new Player("Deep"));
-                players.add(new Player("Deep"));
-                players.add(new Player("Deep"));
-                players.add(new Player("Deep"));
-                players.add(new Player("Deep"));
-                players.add(new Player("Deep"));
-                players.add(new Player("Deep"));
-                players.add(new Player("Deep"));
+		players.add(Factory.createPlayer(input.next()));
                 
 		AssignCards randomCardGenerator = new AssignCards();
                 //randomCardGenerator.length(5);
