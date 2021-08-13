@@ -46,4 +46,8 @@ public class CardApp {
                    
                 }
 	}
+        public static int checkCards(){
+            GenerateCard.generateCards();
+            return GenerateCard.getCards().length;
+        }
 }
