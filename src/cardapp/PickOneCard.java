@@ -5,6 +5,7 @@
  */
 package cardapp;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PickOneCard extends Deck{
@@ -41,8 +42,30 @@ public class PickOneCard extends Deck{
             if(choice.equalsIgnoreCase("yes")){
                 System.out.println("Which card would you like to change it with "+card.getValue()+"     "+card.getSuit());
                 System.out.println("Your cards are: ");
+                
                 player.printCards();
-                int temp = input.nextInt();
+                int x=1;
+                int temp=0;
+                while(x==1){
+                    try{
+                        temp = Integer.parseInt(input.next());
+                        if(temp>=6 || temp<=0){
+                            throw new InputMismatchException();
+                        }
+                        break;
+                    }
+                    catch(InputMismatchException ex){
+                        System.out.println("Input must be between 1 to 5");
+                        System.out.println("which card would you like to change it with "+card.getValue()+"     "+card.getSuit());
+                        continue;
+                    }
+                    catch(NumberFormatException ex1){
+                        System.out.println("Input must be between 1 to 5");
+                        System.out.println("which card would you like to change it with "+card.getValue()+"     "+card.getSuit());
+                        continue;
+                    }
+                }
+       
                 player.changeCard(card, temp-1);
                 System.out.println("Now your cards are ");
                 player.printCards();

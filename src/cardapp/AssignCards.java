@@ -14,7 +14,7 @@ public class AssignCards extends Deck{
         
         
 	public ArrayList<Card> generateCard(int x) {
-			ArrayList<Card> threeCards = new ArrayList<>();
+            ArrayList<Card> threeCards = new ArrayList<>();
             for(int i = 0;i<x;i++){
                 threeCards.add(new Card());
             }
