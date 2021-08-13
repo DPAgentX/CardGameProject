@@ -28,7 +28,6 @@ public class CardApp {
 		players.add(Factory.createPlayer(input.next()));
                 
 		AssignCards randomCardGenerator = new AssignCards();
-                //randomCardGenerator.length(5);
 		for(int x=0;x<players.size();x++) {
                     players.get(x).setCards(randomCardGenerator.generateCard(5));
 		}
