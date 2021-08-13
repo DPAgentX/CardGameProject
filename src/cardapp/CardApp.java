@@ -20,7 +20,7 @@ public class CardApp {
 		AssignCards randomCardGenerator = new AssignCards();
                 //randomCardGenerator.length(5);
 		for(int x=0;x<players.size();x++) {
-			players.get(x).setCards(randomCardGenerator.generateCard(5));
+                    players.get(x).setCards(randomCardGenerator.generateCard(5));
 		}
                 CheckWinner checkWinner = new CheckWinner();
                 PickOneCard oneCard = new PickOneCard();
@@ -42,8 +42,8 @@ public class CardApp {
                 if(!deck.checkDeck()){
                     System.out.println("You are out of cards my frind");
                 }else{
-                    System.out.println(checkWinner.getWinner().toString());
-                    checkWinner.getWinner().printCards();
+                    checkWinner.getWinner().declareWinner();
+                   
                 }
 	}
 }

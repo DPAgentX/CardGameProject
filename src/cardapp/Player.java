@@ -9,17 +9,18 @@ import java.util.ArrayList;
 
 
 
-public class Player{
+public class Player extends Game{
 	
 	private String playerName;
 	//private Card[] cards = new Card[5];
 	private ArrayList<Card> cards = new ArrayList<>();
-        public Player(){}
+        public Player(){
+            super();
+        }
 	public Player(String playerName) {
+                super(playerName);
 		this.playerName = playerName;
 	}
-	
-
 	
 	public ArrayList<Card> getCards() {
 		return cards;
@@ -44,8 +45,14 @@ public class Player{
             //cards[index] = card;
             cards.set(index, card);
         }
-        public String toString(){
+        /*public String toString(){
             
             return "Congratulatins "+ playerName+ " won the game with";
-        }
+        }*/
+
+    @Override
+    public void declareWinner() {
+        System.out.println("Congratulations "+this.playerName+" has won the game with");
+        printCards();
+    }
 }
