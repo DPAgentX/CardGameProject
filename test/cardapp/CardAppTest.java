@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cardapp;
 
 import org.junit.After;
@@ -12,10 +7,14 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author deep2
- */
+/*
+*CardAppTest.java
+*test class for card app
+*author: Deepkumar Patel, Harsh Pravinbhai Goti, Bikranta Singha
+*created: 10th July, 2021
+*modified: 12th August, 2021
+*/
+
 public class CardAppTest {
     
     public CardAppTest() {
@@ -36,22 +35,7 @@ public class CardAppTest {
     @After
     public void tearDown() {
     }
-
-    /**
-     * Test of main method, of class CardApp.
-     */
-    /*@Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        CardApp.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }*/
-
-    /**
-     * Test of checkCards method, of class CardApp.
-     */
+    
     @Test
     public void testCheckCards() {
         System.out.println("checkCards");
