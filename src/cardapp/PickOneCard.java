@@ -19,6 +19,14 @@ public class PickOneCard extends Deck{
     private Scanner input = new Scanner(System.in);
     private String choice;
     
+    public PickOneCard(){
+        
+    }
+    
+    /*
+     * @return void
+     * continues the game by giving the player a choice to be able to swap a card
+    */
     public void getCard(Player player) {
 	randomNumber = (int)(Math.random()*(Card.Values.values().length * Card.Suits.values().length));
         card = super.getCards().get(randomNumber);
@@ -84,8 +92,11 @@ public class PickOneCard extends Deck{
         
     }
 	
-	public Card getCard() {
-		return card;
-	}
+    /*
+     * @return card
+    */
+    public Card getCard() {
+	return card;
+    }
 	
 }

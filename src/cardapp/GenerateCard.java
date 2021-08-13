@@ -13,6 +13,11 @@ public class GenerateCard {
 	private static int counter = 0;
 	private static Card[] cards = new Card[Card.Suits.values().length*Card.Values.values().length];
 	
+        public GenerateCard(){
+            
+        }
+        
+        //generates cards
 	public static void generateCards() {
 		
 		for(Card.Suits s: Card.Suits.values()) {
@@ -25,6 +30,9 @@ public class GenerateCard {
 		}
 	}
 	
+        /*
+         * @return cards
+        */
 	public static Card[] getCards() {
 		return cards;
 	}
