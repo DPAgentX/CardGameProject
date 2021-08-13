@@ -10,6 +10,13 @@ package cardapp;
 
 public class Factory {
     
+    public Factory(){
+        
+    }
+    
+    /*
+     * @return player
+    */
     public static Player createPlayer(String type)
     {
         Player player = null;
