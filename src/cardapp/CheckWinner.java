@@ -1,9 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cardapp;
+
+/*
+*CheckWinner.java
+*after every turn checks if a player has met the win condition or not
+*author: Deepkumar Patel, Harsh Pravinbhai Goti, Bikranta Singha
+*created: 10th July, 2021
+*modified: 12th August, 2021
+*/
 
 import java.util.ArrayList;
 

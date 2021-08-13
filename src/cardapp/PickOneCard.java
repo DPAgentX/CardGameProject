@@ -1,16 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cardapp;
+
+/*
+*PickOneCard.java
+*Advances the game by giving the player a choice to able to swap a card if they choose to do so 
+*author: Deepkumar Patel, Harsh Pravinbhai Goti, Bikranta Singha
+*created: 10th July, 2021
+*modified: 12th August, 2021
+*/
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PickOneCard extends Deck{
 
-    //private List<CardTemplete> cards = super.getCards();
+    
     private Card card= new Card(); 
     private int randomNumber;
     private Scanner input = new Scanner(System.in);

@@ -1,5 +1,14 @@
 package cardapp;
 
+/*
+*Card.java
+*Card class to generate a single Card 
+*author: Deepkumar Patel, Harsh Pravinbhai Goti, Bikranta Singha
+*created: 10th July, 2021
+*modified: 12th August, 2021
+*/
+
+
 public class Card {
 
 	public enum Values{

@@ -1,8 +1,18 @@
 package cardapp;
 
+/*
+*CardApp.java
+*contains main 
+*author: Deepkumar Patel, Harsh Pravinbhai Goti, Bikranta Singha
+*created: 10th July, 2021
+*modified: 12th August, 2021
+*/
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+
 public class CardApp {
 
 	public static void main(String[] args) {

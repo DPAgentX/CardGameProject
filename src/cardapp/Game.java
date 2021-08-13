@@ -8,10 +8,16 @@ package cardapp;
 import java.util.ArrayList;
 
 /**
- * The class that models your game. You should create a more specific
- * child of this class and instantiate the methods given.
- * @author dancye, 2018
- */
+* The class that models your game. You should create a more specific
+* child of this class and instantiate the methods given.
+* @author dancye, 2018
+*
+* Game.java
+* gets/sets players, plays the game, declares winner
+* modifiedBy: Deepkumar Patel, Harsh Pravinbhai Goti, Bikranta Singha
+* modified: 12th August, 2021
+*/
+
 public abstract class Game 
 {
     private final String gameName;//the title of the game
