@@ -1,5 +1,12 @@
-
 package cardapp;
+
+/*
+*AssignCards.java
+*Assigns random cards
+*author: Deepkumar Patel, Harsh Pravinbhai Goti, Bikranta Singha
+*created: 10th July, 2021
+*modified: 12th August, 2021
+*/
 
 
 import java.util.ArrayList;
@@ -9,9 +16,9 @@ import java.util.List;
 
 public class AssignCards extends Deck{
 	
-        //private Card[] threeCards = new Card[5];
-        
-        
+        public AssignCards(){
+            
+        }           
         
 	public ArrayList<Card> generateCard(int x) {
             ArrayList<Card> threeCards = new ArrayList<>();
@@ -35,7 +42,9 @@ public class AssignCards extends Deck{
 		}
 		return threeCards;
 	}
-
+        
+        
+        //Overriding the default getCards() method 
         @Override
 	public  List<Card> getCards() {
 		return super.getCards();
