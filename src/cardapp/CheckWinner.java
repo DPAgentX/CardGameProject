@@ -17,8 +17,15 @@ public class CheckWinner extends Deck {
         private ArrayList<Card> player1Cards = new ArrayList<Card>();
         private ArrayList<Card> player2Cards = new ArrayList<Card>();
         
-	public boolean checkWinner(Player player1, Player player2) {
+        public CheckWinner(){
             
+        }
+        
+        /*
+         * @return true or false
+        */
+	public boolean checkWinner(Player player1, Player player2) {
+            //checks whether a winner is found of if the deck is empty
             
             player1Cards = player1.getCards();
             player2Cards = player2.getCards();
@@ -34,9 +41,18 @@ public class CheckWinner extends Deck {
             
             return super.checkDeck();
 	}
+        
+        /*
+         * @return whoWon
+        */
         public Player getWinner(){
             return whoWon;
         }
+        
+        /*
+         * @return void
+         * assign winning player to whoWon
+        */
         public void setWinner(Player player){
             this.whoWon = player;
         }
